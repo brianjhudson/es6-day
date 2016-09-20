@@ -97,7 +97,7 @@ const lastFive = [ 6, 7, 8, 9, 10 ];
 
 // using the spread operator, create a new array named oneThroughTen.
 // You should use the above arrays (and 2 missing digits of your own)
-
+const oneThroughTen = [ ...firstThree, 4, 5, ...lastFive ];
 
 // do not modify
 const jsVersions = [ "es5", "es6", "es2017 onward" ];
@@ -105,13 +105,13 @@ function whatToUse( past, present, future ) {
 	console.log( `Use ${ past } when supporting older browsers natively.` );
 	console.log( `Use ${ present } when browser support is not an issue, or you can transpile your code.` );
 	console.log( `Use ${ future } carefully! It may change before being finalized.` );
-
 	return present;
 }
 
 // using the spread operator, pass each element of jsVersions as an individual argument to whatToUse
 // and save the return value in a variable named currentJS.
 
+const currentJS = whatToUse( ...jsVersions );
 
 
 ///////////////
