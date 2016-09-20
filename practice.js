@@ -154,9 +154,8 @@ function evenOdd( ...nums ) {
 // multiplied by num.
 
 function multiply( num, ...moreNums ) {
-	const newArray = [];
-	moreNums.forEach( element => newArray.push(element * num) );
-	return newArray;
+	return moreNums.map( element => element * num );
+
 }
 
 
