@@ -164,7 +164,7 @@ const bits = [ 2, 4, 8, 16, 32, 64, 128 ];
 
 // using an arrow function and the built in .map method, create a new array
 // named mooresBits. mooresBits should be the bits array doubled.
-
+const mooresBits = bits.map( element => element * 2 );
 
 // do not modify
 const that = {
@@ -175,3 +175,4 @@ const that = {
 
 // using an arrow function, add a property named arrow that returns the window object
 // do this without using the window keyword. HINT: The default binding of the this keyword
+that.arrow = () => this;
