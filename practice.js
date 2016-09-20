@@ -74,6 +74,8 @@ const destructuring = {
 // using assignment destructuring create two new variables, objects and arrays,
 // with the values taken from the above object
 
+const { objects } = destructuring;
+const { arrays } = destructuring;
 
 
 
@@ -83,7 +85,7 @@ const vocabAgain = [ "let", "const", "destructuring", "spread", "rest", "arrow f
 // using assignment destructuring, create three variables notAVar, alsoNotVar, and everythingElse
 // notVar should be "let", alsoNotVar should be "const", and everythingElse should contain the rest of the array.
 
-
+const [ notVar, alsoNotVar, ...everythingElse ] = vocabAgain;
 
 ////////////
 /* ARRAYS */
