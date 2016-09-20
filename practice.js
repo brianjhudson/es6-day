@@ -119,7 +119,7 @@ const currentJS = whatToUse( ...jsVersions );
 ///////////////
 
 // modify greeter to greet Anonymous if no name is passed.
-function greeter( name ) {
+function greeter( name = "Anonymous" ) {
 	return `Hi ${ name }!`
 }
 
@@ -128,6 +128,9 @@ function greeter( name ) {
 // and returns number to the power of exponent.
 // if no exponent is passed, the exponent should be two
 
+function toPower( num, exp = 2 ) {
+	return Math.pow(num, exp);
+}
 
 // using rest parameters, write a function named evenOdd that takes in
 // any number of parameters and returns an object with two properties - even and odd.
